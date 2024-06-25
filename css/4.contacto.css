@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color:rgba(80, 80, 80, 0.454); */
+    background-color:white;
+}
+
+/* cabecera */
+#cabecera{
+    margin:0;
+    padding:0;
+    display: flex; /*pone los elemenetos en una linea horizontal*/
+}
+
+#cabecera ul{
+    height: auto;
+    list-style: none; 
+    display: flex;  /*pone los elemenetos en una linea horizontal*/
+    margin: 0;
+    padding: 0;
+    align-items: center; /*centra lo items que tiene los elementos*/
+    float: right; 
+}
+
+#cabecera li{
+    /*border: 2px solid black;*/
+    display: inline-block;  /*hace espaciados entre cada fila en una linea horizontal(displey:flex)*/
+    margin-right: 12px;
+    padding: 0;
+    font-size: large;
+    
+}
+
+#cabecera li.imagen{
+    margin-right: 440px;
+}
+
+#cabecera a{
+    text-decoration: none; /*saca el subrayado del elemento a*/
+    color: black;
+    
+}
+/*FIN CABECERA-------------------------------------------------------*/
+
+/*FONDO DE PANTALLA: "CONTACTO"*/
+.fondoPantalla{ /*DIV QUE CONTIENE FONDO DE FOTO Y TITULO: "CONTACTO"*/
+    height: 480px;    
+}
+
+.fondoPantalla img{
+    height: 100%;
+    width:100%;
+}
+
+div.titulo{ /*TITULO: "CONTACTO"*/
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+}
+/*FONDO DE PANTALLA: "CONTACTO"*/
+
+/*FORMULARIO*/
+.correo{
+    position: relative;
+    left: 140px;
+}
+
+form{/*TITULO: ENVIANOS UN MENSAJE*/
+    margin: 0;
+    padding: 0;
+    height: 348px;
+    width: 650px;
+    position: relative;
+    left: 20px;
+}
+
+table{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"]{/*BOTONES DE TEXTO*/
+    height: 30px;
+    width: 320px;
+    font-size: 20px;
+}
+
+input[type="submit"]{/*BOTON DE ENVIAR*/
+    float: right;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #8dc641;
+    border: 0;
+    color: white;
+}
+
+.fotoVerticalForm{ /*FOTO DE KALOB CON CASCADA DE FONDO*/
+    position: absolute;
+    left: 720px;
+    top: 610px;
+    width: 28%;
+}
+/*FORMULARIO*/
+
+/* pie */
+#pie {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(0, 156, 159);
+}
+
+.contenedorPie{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorPie ul{
+    list-style: none; 
+}
+/* pie */
