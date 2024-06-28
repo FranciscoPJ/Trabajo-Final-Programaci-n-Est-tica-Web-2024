@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/7.signup.css" type="text/css" media="screen">
+
+    <script type="text/javascript" src="js/7.signup.js"></script>
+</head>
+
+<body>
+    <!-- ACABECERA -->
+    <div id="cabecera">
+
+        <ul>
+
+            <li class="imagen"><a href="1.home.html"><img src="media/home/logo.svg" alt="logo"></a></li>
+
+            <li><a href="2.excursiones.html">Excursiones</a></li>
+
+            <li><a href="3.sobreNosotros.html">Sobre Nosotros</a></li>
+
+            <li><a href="4.contacto.html">Contacto</a></li>
+
+            <li><a href="5.blog.html">Blog</a></li>
+
+            <li><a href="6.login.html">Log In</a></li>
+
+            <li><a href="7.signup.html">Sing Up</a></li>
+
+        </ul>
+
+    </div>
+    <!-- ACABECERA -->
+
+    <h1>Nueva Cuenta</h1>
+
+    <form id="miFormulario">
+
+        <!-- nuevo -->
+        <!-- <label for="nombreUsuario">Nombre de Usuario:</label>
+        <input type="text" id="nombreUsuario" name="nombreUsuario"> -->
+        <!-- nuevo -->
+        
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <!-- nuevo -->
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" name="telefono">
+        <!-- nuevo -->
+
+
+
+        <label for="obras_sociales">Obras Social:</label>
+        <select id="obras_sociales" name="obras_sociales">
+            <option value=""></option>
+            <option value="obra1">SOSUNC</option>
+            <option value="obra2">ISSN</option>
+            <option value="obra3">OSDE</option>
+            <!-- Agrega más opciones aquí -->
+        </select>
+
+        <!-- nuevo -->
+        <label for="pais">Pais:</label>
+        <input type="text" id="pais" name="pais">
+
+        <label for="provincia">Provincia:</label>
+        <input type="text" id="provincia" name="provincia">
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad">
+
+        <label for="codigoPostal">Codigo Postal:</label>
+        <input type="text" id="codigoPostal" name="codigoPostal">
+        <!-- nuevo -->
+
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <div class="date-inputs">
+            <input type="text" id="dia" name="dia" placeholder="D&iacute;a">
+            <input type="text" id="mes" name="mes" placeholder="Mes">
+            <input type="text" id="anio" name="anio" placeholder="A&ntilde;o">
+        </div>
+
+        <!-- nuevo -->
+        <label for="password">Contrasenia:</label>
+        <input type="text" id="passwordUser" name="passworduser">
+
+        <label for="confirmarPassword">Confirmar Contrasenia:</label>
+        <input type="text" id="confirmPasswordUser" name="confirmPassworduser">
+        <!-- nuevo -->
+
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones"></textarea>
+
+        <div id="divUsoOpcional"></div>
+
+        <input type="submit" value="Enviar" onclick="return validar();">
+    </form>
+
+    <!-- PIE DE LA PAGINA COMIENZA-->
+    <div id="pie">
+        <div class="contenedorPie">
+            <img src="media/home/logo.svg" alt="logo">
+            <ul>
+                <li>+54 9 (299) 500-1034</li>
+                <li>OarsExpedicionesGuiadasNqn@gmail.com</li>
+                <li>Av. Argentina 123, Neuquen Capital, Argentina</li>
+            </ul>
+        </div>
+    </div>
+    <!-- PIE DE LA PAGINA FIN-->
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Captura el formulario por su ID
+            var form = document.getElementById('miFormulario');
+
+            // Agrega un controlador de eventos para el evento 'submit'
+            form.addEventListener('submit', function (event) {
+                // Evita que el formulario se envíe
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

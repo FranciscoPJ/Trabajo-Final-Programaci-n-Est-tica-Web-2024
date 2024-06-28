@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color:rgba(80, 80, 80, 0.454); */
+    background-color:white;    
+}
+
+/* cabecera */
+#cabecera{
+    margin:0;
+    padding:0;
+    /* width: 100%; */
+    display: flex; /*pone los elemenetos en una linea horizontal*/
+}
+
+#cabecera ul{
+    height: auto;
+    list-style: none; 
+    display: flex;  /*pone los elemenetos en una linea horizontal*/
+    margin: 0;
+    padding: 0;
+    align-items: center; /*centra lo items que tiene los elementos*/
+    float: right; 
+}
+
+#cabecera li{
+    /*border: 2px solid black;*/
+    display: inline-block;  /*hace espaciados entre cada fila en una linea horizontal(displey:flex)*/
+    margin-right: 12px;
+    padding: 0;
+    font-size: large;
+    
+}
+
+#cabecera li.imagen{
+    margin-right: 440px;
+}
+
+#cabecera a{
+    text-decoration: none; /*saca el subrayado del elemento a*/
+    color: black;
+    
+}
+/*FIN CABECERA-------------------------------------------------------*/
+
+
+.ContieneDatosForm{ /*div principal*/
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    width: 99.6%;
+    display: flex;
+    /* align-items: center; */
+    /* border: 2px solid black; */
+}
+
+.formulario{
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    width: 99.6%;
+    /* border: 2px solid red; */
+}
+
+.crearCuenta{
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    width: 520.5px;
+    /* border: 2px solid blue; */
+}
+
+/*--------------------principiales-------------------------------------------*/
+
+/*div formulario*/
+#formu{
+    height: 220px;
+    width: 99.6%;
+    /* border: 2px solid yellow; */
+}
+
+table{
+    height: 220px;
+    width: 99.6%;
+    /* border: 2px solid violet; */
+    text-align: center;
+}
+
+td{
+    /* text-align: center; */
+    margin-top: 0%;
+} 
+
+input[type="text"]{
+    height: 30px;
+    width:500px;
+}
+
+input[type="password"]{
+    height: 30px;
+    width:500px;
+}
+
+input[type="submit"]{
+    height: 30px;
+    background-color: #8dc641;
+    border: 0;
+    /* margin-left: 180px; */
+}
+
+.crearCuentaSign{
+    font-size: 13px;
+    position: relative;
+    bottom: 8px;
+    /* margin-left: 180px; */
+}
+
+/*div formulario*/
+
+/* div crearCuenta*/
+.crearCuenta h2{
+    height: 10px;
+    margin-top: 0;
+    text-align: center;
+} 
+
+.crearCuenta ul{
+    height: 60px;
+    width: 477px;
+    list-style: none;     
+    /* border: 2px solid salmon; */
+}
+
+/* .crearCuenta li{
+    
+} */
+/* div crearCuenta*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pie */
+#pie {
+    width: 100%;
+    position: relative;
+    top:24px;
+    background-color: rgb(0, 156, 159);
+}
+
+.contenedorPie{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorPie ul{
+    list-style: none; 
+}
+/* pie */
