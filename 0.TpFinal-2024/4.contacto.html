@@ -1,0 +1,121 @@
+<html>
+
+    <head>
+        <title>Contacto</title>
+        <link rel="stylesheet" href="css/4.contacto.css" type="text/css" media="screen">
+
+        <script type="text/javascript" src="js/4.contacto.js"></script>
+    </head>
+
+    <body>
+        <!-- ACABECERA -->
+        <div id="cabecera">                        
+    
+            <ul>  
+                
+                <li class="imagen"><a href="1.home.html"><img src="media/home/logo.svg" alt="logo"></a></li>
+
+                <li><a href="2.1.Excursiones.html">Excursiones</a></li>
+
+                <li><a href="3.sobreNosotros.html">Sobre Nosotros</a></li>
+
+                <li><a href="4.contacto.html">Contacto</a></li>
+
+                <li><a href="5.blog.html">Blog</a></li>
+
+                <li><a href="6.login.html">Log In</a></li>
+
+                <li><a href="7.signup.html">Sign Up</a></li>
+        
+            </ul>
+
+        </div>    
+        <!-- ACABECERA -->
+
+        <!-- FONDO DE PANTALLA START -->
+        <div class="fondoPantalla">
+            <img src="media/home/2.DSC07521.jpg" alt="contacto">
+        </div>
+        <!-- FONDO DE PANTALLA FIN -->
+
+        <!-- FONDO DE PANTALLA TITULO START -->
+        <div class="titulo"><h1>Contacto</h1></div>
+        <!-- FONDO DE PANTALLA TITULO FIN -->                
+        
+        <h1 class="correo"><Strong>ENVIANOS UN MENSAJE</Strong></h1>
+        
+
+        <form id="miFormulario">
+            <table>
+                <thead>
+                    <td>NOMBRE</td>
+                    <td>APELLIDO</td>
+                </thead>
+                
+                <tr>
+                    <td><input type="text" id="nombre"></td>
+                    <td><input type="text" id="apellido"></td>
+                </tr>
+
+                <tr>
+                    <td>CORREO ELECTRONICO</td>
+                    <td>NUMERO TEL</td>                    
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="text" id="email">
+                        <input type="text" id="numero">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>MENSAJE</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <textarea name="" id="mensaje" rows="10" cols="84"></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enviar" onclick="return validar();">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+        
+        <img class="fotoVerticalForm" src="media/home/9.contacto-2.jpg" alt="">
+
+        <!-- PIE DE LA PAGINA COMIENZA-->
+        <div id="pie">
+            <div class="contenedorPie">
+                <img src="media/home/logo.svg" alt="logo">
+                <ul>
+                    <li>+54 9 (299) 500-1034</li>
+                    <li>OarsExpedicionesGuiadasNqn@gmail.com</li>
+                    <li>Av. Argentina 123, Neuquen Capital, Argentina</li>
+                </ul>
+            </div>
+        </div>
+        <!-- PIE DE LA PAGINA FIN--> 
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Captura el formulario por su ID
+                var form = document.getElementById('miFormulario');
+    
+                // Agrega un controlador de eventos para el evento 'submit'
+                form.addEventListener('submit', function (event) {
+                    // Evita que el formulario se envíe
+                    event.preventDefault();
+                });
+            });
+        </script>
+    </body>
+
+</html>

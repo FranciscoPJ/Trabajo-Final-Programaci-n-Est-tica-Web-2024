@@ -1,0 +1,174 @@
+<html>
+
+    <head>
+        <title>Excursiones</title>
+        <link rel="stylesheet" href="css/2.1.Excursiones.css" type="text/css" media="screen">
+        <script type="text/javascript" src="js/2.1.Excursiones.js"></script>
+    </head>
+
+    <body>
+        <!-- ACABECERA -->
+        <div id="cabecera">                        
+    
+            <ul>  
+                
+                <li class="imagen"><a href="1.home.html"><img src="media/home/logo.svg" alt="logo"></a></li>
+
+                <li><button id="cerrarSession" onclick="cerrarSesion()">Cerrar Sesion</button></li>
+
+                <li><a href="2.1.Excursiones.html">Excursiones</a></li>
+
+                <li><a href="3.sobreNosotros.html">Sobre Nosotros</a></li>
+
+                <li><a href="4.contacto.html">Contacto</a></li>
+
+                <li><a href="5.blog.html">Blog</a></li>
+
+                <li><a href="6.login.html">Log In</a></li>
+
+                <li><a href="7.signup.html">Sign Up</a></li>
+                <!-- 🛒 -->
+                <li id="carritoLogo"><img src="media/home/0.carritoCompras.png" alt="carrito" onclick="desplegar('visible')"></li>
+        
+            </ul>
+
+        </div>    
+        <!-- ACABECERA -->
+
+        <!-- FONDO Excursiones START -->
+        <div class="fondoFoto">
+            <img src="media/home/3.DJI_0693_1-1.JPG" alt="excursiones">
+        </div>
+
+        <div class="titulo"><h1>Excursiones</h1></div>
+        <!-- FONDO Excursiones FIN -->
+        
+        <!-- TRAVESIA START -->
+        <h1 align="center">Excursiones de Travesia</h1>
+        
+        <div id="travesia">
+            
+            <div id="travesia1">
+                <img src="media/home/5.Plottier_Octubre-3.jpg" alt="plottier">
+                <h2>Plottier, Rio Limay</h2>
+                <p>$5000</p>
+                <button id="plottier" onclick="agregarInfo('plottier')">comprar</button>
+            </div>
+
+            <div id="travesia2">                
+                <img src="media/home/4.Fiordo Comau (7).jpg" alt="fiordo comau">
+                <h2>Fiordo Comau, Chile</h2>
+                <p>$200000</p>
+                <button id="fiordo"  onclick="agregarInfo('fiordo')">comprar</button>
+            </div>
+
+            <div id="travesia3">
+                <img src="media/home/7.Primera Bajada De Santi-5.jpg" alt="roca">
+                <h2>General Roca, Rio Negro</h2>
+                <p>$5000</p>
+                <button id="generalRoca"  onclick="agregarInfo('roca')">comprar</button>
+            </div>
+
+            <div id="travesia4">
+                <img src="media/home/1.Expedicion Chile Kayak Travesia 2023-2.jpg" alt="glaciares">
+                <h2>Glaciar Bernardo, Chile</h2>
+                <p>$500000</p>
+                <button id="glaciar"  onclick="agregarInfo('glaciar')">comprar</button>
+            </div>
+
+        </div>
+        <!-- TRAVESIA FIN -->
+
+        <!-- AGUAS BLANCAS START -->
+        <div><h1 align="center">Excursiones de Aguas Blancas</h1></div>  
+        
+        <div id="aguasBlancas">
+            
+            <div id="aguasBlancas1">
+                <img src="media/home/2.DSC07344.jpg" alt="plottier">
+                <h2>Pucon, Rio Palguin</h2>
+                <p>$5000</p>
+                <button id="palguin"  onclick="agregarInfo('palguin')">comprar</button>
+            </div>
+
+            <div id="aguasBlancas2">                
+                <img src="media/home/2.Araucaria.jpg" alt="fiordo comau">
+                <h2>Rio Truful Truful</Tr></h2>
+                <p>$2000</p>
+                <button id="Truful"  onclick="agregarInfo('truful')">comprar</button>
+            </div>
+
+            <div id="aguasBlancas3">
+                <img src="media/home/2.WCA_BlancoSur_KalobGrady-73.jpg" alt="roca">
+                <h2>Curacuatin, Blanco Sur</h2>
+                <p>$3000</p>
+                <button id="blancoSur" onclick="agregarInfo('blancoSur')">comprar</button>
+            </div>
+
+            <div id="aguasBlancas4">
+                <img src="media/home/3.DSC_0272.jpg" alt="glaciares">
+                <h2>Tucuman, Rio Los Sosas</h2>
+                <p>$20000</p>
+                <button id="losSosas" onclick="agregarInfo('losSosas')">comprar</button>
+            </div>
+
+        </div>
+        <!-- AGUAS BLANCAS FIN -->
+
+        <!-- MEJORES EXCURSIONES START -->
+        <h1 align="center">Mejores Excursiones</h1>
+        <div id="mejoresExcursiones">
+            
+            <div id="mejoresExcursiones1">
+                <img src="media/home/5.Plottier_Octubre-3.jpg" alt="plottier">
+                <h2>Pucon, Rio Palguin</h2>
+                <p>$5000</p>
+                <button onclick="agregarInfo('palguin')">comprar</button>
+            </div>
+
+            <div id="mejoresExcursiones2">                
+                <img src="media/home/4.Fiordo Comau (7).jpg" alt="fiordo comau">
+                <h2>Fiordo Comau, Chile</Tr></h2>
+                <p>$200000</p>
+                <button onclick="agregarInfo('fiordo')">comprar</button>
+            </div>
+
+            <div id="mejoresExcursiones3">
+                <img src="media/home/2.Araucaria.jpg" alt="roca">
+                <h2>Rio Truful Truful</h2>
+                <p>$2000</p>
+                <button onclick="agregarInfo('truful')">comprar</button>
+            </div>
+
+        </div>
+        <!-- MEJORES EXCURSIONES START -->
+
+        <!--modal carrito-->
+        <div id="modalCarrito">
+            <div id="modalCarritoHeader">
+                <h1 id="h1Carrito">Carrito:</h1>
+                <h1 id="h1Historial">Historial</h1>
+                <button id="x" onclick="desplegar('hidden')">X</button>
+            </div>
+            <div id="modalContenido">
+                
+            </div>
+        </div>
+        <!--modal carrito-->
+
+        <!-- PIE DE LA PAGINA COMIENZA-->
+        <div id="pie">
+            <div class="contenedorPie">
+                <img src="media/home/logo.svg" alt="logo">
+                <ul>
+                    <li>+54 9 (299) 500-1034</li>
+                    <li>OarsExpedicionesGuiadasNqn@gmail.com</li>
+                    <li>Av. Argentina 123, Neuquen Capital, Argentina</li>
+                </ul>
+            </div>
+        </div>
+        <!-- PIE DE LA PAGINA FIN-->
+
+    </body>
+
+</html>

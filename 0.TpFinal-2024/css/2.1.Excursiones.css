@@ -1,0 +1,356 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color:rgba(80, 80, 80, 0.454); */
+    background-color:white;    
+    /* font-family: Arial,Helvetica,sans-serif; */
+}
+
+/* cabecera */
+#cabecera{
+    margin:0;
+    padding:0;
+    display: flex; /*pone los elemenetos en una linea horizontal*/
+}
+
+#cabecera ul{
+    height: auto;
+    list-style: none; 
+    display: flex;  /*pone los elemenetos en una linea horizontal*/
+    margin: 0;
+    padding: 0;
+    align-items: center; /*centra lo items que tiene los elementos*/
+    float: right; 
+}
+
+#cabecera li{
+    /*border: 2px solid black;*/
+    display: inline-block;  /*hace espaciados entre cada fila en una linea horizontal(displey:flex)*/
+    margin-right: 10px;
+    font-size: 19px;
+    /* border: 2px solid wheat; */
+}
+
+#carritoLogo img{
+    width: 30px;
+    height: 30px;
+}
+
+#cabecera li.imagen{
+    margin-right: 390px;
+}
+
+#cerrarSession{
+    /*visibility: hidden; aca escondi cerrar sesion*/
+    position: absolute;
+    right: 825px;
+    top: 22px;
+}
+
+#cabecera a{
+    text-decoration: none; /*saca el subrayado del elemento a*/
+    color: black;
+    
+}
+
+#cabecera a:hover{
+    color: #45a049;
+}
+/*FIN CABECERA-------------------------------------------------------*/
+
+/*FONDO DE PANTALLA: "SOBRE NOSOTROS"*/
+.fondoFoto{ /*DIV QUE CONTIENE FONDO DE FOTO Y TITULO: "SOBRE NOSOTROS"*/
+    height: 440px;    
+}
+
+.fondoFoto img{
+    height: 450px;
+    width:100%;
+}
+
+div.titulo{ /*TITULO: "SOBRE NOSOTROS"*/
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+/*FONDO DE PANTALLA: "SOBRE NOSOTROS"*/
+
+/* TRAVESIA -------------------------------------------------------------------*/
+#travesia{
+    height: 345px;
+    width: 100%;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+#travesia div{
+    margin-right: 20px;
+    height: 340px;
+    padding: 0;
+    display: inline-block;
+}
+
+#travesia1, #travesia2, #travesia3, #travesia4{
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#travesia img{
+    height: 220px;
+    width: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#travesia h2{
+    font-size: 20px;
+}
+
+#travesia button{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#travesia button:hover{
+    background-color: rgb(53, 53, 53);
+}
+/* TRAVESIA -----------------------------------------------------------*/
+
+
+/* AGUAS BLANCAS -------------------------------------------------------*/
+#aguasBlancas{
+    height: 345px;
+    width: 100%;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+#aguasBlancas div{
+    margin-right: 20px;
+    height: 340px;
+    padding: 0;
+    display: inline-block;
+}
+
+#aguasBlancas1, #aguasBlancas2, #aguasBlancas3, #aguasBlancas4{
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#aguasBlancas img{
+    height: 220px;
+    width: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#aguasBlancas h2{
+    font-size: 20px;
+}
+
+#aguasBlancas button{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#aguasBlancas button:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+
+/* AGUAS BLANCAS -------------------------------------------------------------- */
+
+/* MEJORES EXUCURZIONES -------------------------------------------------------- */
+
+
+#mejoresExcursiones{
+    height: 345px;
+    width: 100%;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+#mejoresExcursiones div{
+    margin-right: 20px;
+    height: 340px;
+    padding: 0;
+    display: inline-block;
+}
+
+#mejoresExcursiones1, #mejoresExcursiones2, #mejoresExcursiones3{
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#mejoresExcursiones img{
+    height: 220px;
+    width: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#mejoresExcursiones h2{
+    font-size: 20px;
+}
+
+#mejoresExcursiones button{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#mejoresExcursiones button:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+/* MEJORES EXUCURZIONES -------------------------------------------------------- */
+
+
+/* MODAL CARRITO */
+#modalCarrito{
+    height: auto;
+    width: 80%;  
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 10%;
+    visibility: hidden;
+}
+
+#modalCarrito #modalCarritoHeader{
+    display: flex;
+}
+
+#modalCarritoHeader h1{
+    display: inline-block;
+    color: white;
+}
+
+#modalCarritoHeader #h1Carrito{
+    margin-left: 50px;
+}
+
+#h1Historial{
+    text-align: center;
+    margin-left: 190px;
+}
+
+#modalCarritoHeader #x{
+    height: auto;
+    margin-left: 260px;
+    color: white;
+    border: none;
+    background-color: black;
+    font-size: 2em;
+}
+
+#modalCarritoHeader #x:hover{
+    color: rgba(184, 184, 184, 0.497);    
+}
+
+#modalContenido{
+    height: auto;
+    color: white;
+}
+
+
+/* MODAL CARRITO */
+
+/* ADETRO DEL MODAL CARRITO */
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.modal-content img{
+    height: 100px;
+    width: 100px;
+}
+
+.total-content{
+    /* border: 2px solid #45a049; */
+    height: 35px;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.pagar{
+    background-color: #4caf50;
+    border: none;
+    height: 32px;
+    width: 100px;
+    position: relative;
+    top: -3px;
+    left: 520px; /*modifique*/
+}
+
+.pagar:hover{
+    background-color: #45a049;
+}
+/* ADETRO DEL MODAL CARRITO */
+
+
+
+
+
+
+
+/* pie -----------------------------------------------------------------------*/
+#pie {
+    position: relative;
+    top: 14px;
+    width: 100%;
+    background-color: rgb(0, 156, 159);
+}
+
+.contenedorPie{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorPie ul{
+    list-style: none; 
+}
+/* pie */

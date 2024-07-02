@@ -1,0 +1,413 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color:rgba(80, 80, 80, 0.454); */
+    background-color:white;
+}
+
+/* cabecera */
+#cabecera{
+    margin:0;
+    padding:0;
+    display: flex; /*pone los elemenetos en una linea horizontal*/
+}
+
+#cabecera ul{
+    height: auto;
+    list-style: none; 
+    display: flex;  /*pone los elemenetos en una linea horizontal*/
+    margin: 0;
+    padding: 0;
+    align-items: center; /*centra lo items que tiene los elementos*/
+    float: right; 
+}
+
+#cabecera li{
+    /*border: 2px solid black;*/
+    display: inline-block;  /*hace espaciados entre cada fila en una linea horizontal(displey:flex)*/
+    margin-right: 12px;
+    padding: 0;
+    font-size: large;
+    
+}
+
+#cabecera li.imagen{
+    margin-right: 440px;
+}
+
+#cabecera a{
+    text-decoration: none; /*saca el subrayado del elemento a*/
+    color: black;
+    
+}
+
+#cabecera a:hover{
+    color: #45a049;
+}
+/* contenido */
+/*carrucel de fotos*/
+
+.slider{   
+    position: relative;
+    margin-top: 20px;
+    margin-left: 3px; 
+    width: 1030px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{    
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    /* width: 800px;
+    height: 400px; */
+    width: 1030px;
+    height: 500px;
+}
+
+/*css for manual slide nagvigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -30px;  
+    margin-left: 115px;  /*CASO BOTONES CARRUCEL PARTE 1*/
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    margin-top: 90px;   
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto{
+    position: absolute;    
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    margin-left: 115px; /*CASO BOTONES CARRUCEL PARTE 2*/
+}
+
+.navigation-auto div{
+    border-style: none;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: white;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: white;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: white;
+}
+
+/*carrucel de fotos*/
+
+/*Tercera parte del Contenido "tipo de viajes" start*/
+
+/*IMG*/
+.tiposViajes img, .mejoresExcursiones img, .experienciaClientes img, .hilghlightsBlog img{
+    border-radius: 3px;
+}
+/*IMG*/
+
+/*div que contienen los tipos viajes start*/
+.tiposViajes{
+    margin:0;
+    padding: 0;
+    margin-top: 20px;     
+    text-align: center; 
+        
+}
+
+.contenedorTiposViajes{
+    display: flex;
+}
+/*div que contienen los tipos viajes fin*/
+
+/*travesia*/
+.travesia{
+    width: 500px;
+    margin-left: 5px;
+    text-align: center;  
+}
+
+.travesia img{
+    width: 500px;
+}
+
+.travesia a{
+    text-decoration: none;
+    color: black;
+}
+
+.travesia a:hover{
+    color: #45a049;
+}
+/*travesia*/
+
+/*aguasBlancas*/
+.aguasBlancas{
+    width: 500px;
+    margin-left: 25px;
+    text-align: center;  
+}
+
+.aguasBlancas img{
+    height: 281px;
+    width: 500px;
+}
+
+.aguasBlancas a{
+    text-decoration: none;
+    color: black;
+}
+
+.aguasBlancas a:hover{
+    color: #45a049;
+}
+/*aguasBlancas*/
+
+/*Tercera parte del Contenido "tipo de viajes" fin*/
+
+/*Cuarta parte del Contenido "mejoresExcursiones" start*/
+
+/*div que contienen los mejoresExcursiones start*/
+.mejoresExcursiones{
+    padding: 0;
+    margin: 0;    
+    text-align: center; 
+}
+
+.contenedorMejoresExcursiones{
+    display: flex;
+}
+/*div que contienen los mejoresExcursiones fin*/
+
+/*excursion uno, dos y tres*/
+.excursionUno, .excursionDos, .excursionTres{
+    width: 500px;
+    margin-left: 5px;
+    text-align: center;  
+}
+
+.excursionUno a, .excursionDos a, .excursionTres a{ /*excursion uno, dos y tres*/
+    text-decoration: none;
+    color: black;
+}
+
+.excursionUno a:hover, .excursionDos a:hover, .excursionTres a:hover{ /*excursion uno, dos y tres*/
+    color: #45a049;
+}
+
+.excursionUno img, .excursionTres img{ /*excursion uno y tres*/
+    width: 280px;
+}
+/*excursion uno*/
+
+/*excursion dos*/
+.excursionDos img{
+    height: 160px;
+    width: 280px;
+}
+/*excursion dos*/
+
+/*Cuarta parte del Contenido "mejoresExcursiones" fin--------------------------*/
+
+/*Quinta parte del Contenido "experiencia de clientes" start--------------------*/
+
+/*div que contienen las experiencias de clientes start*/
+.experienciaClientes{
+    padding: 0;
+    margin: 0;    
+    text-align: center; 
+}
+
+.contenedorClientes{
+    display: flex;
+}
+/*div que contienen las experiencias de clientes fin*/
+
+/*clientes*/
+.cliente1, .cliente2, .cliente3, .cliente4{
+    width: 500px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;  
+    /* border: 2px solid wheat;    */
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cliente1 img, .cliente2 img, .cliente3 img, .cliente4 img{
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;    
+}
+
+/* .cliente1 h2, .cliente2 h2, .cliente3 h2, .cliente4 h2{
+    
+} */
+
+.cliente1 span, .cliente2 span, .cliente3 span, .cliente4 span{
+    /* border: 1px solid yellow;  */
+    position: relative;
+    bottom: 15px;
+}
+/*clientes*/
+
+/*Quinta parte del Contenido "experiencia de clientes" fin-------------------*/
+
+/*Sexta parte del Contenido "highlights" start------------------------------*/
+
+/*div que contienen las experiencias de clientes start*/
+.hilghlightsBlog{
+    padding: 0;
+    margin: 0;    
+    text-align: center; 
+}
+
+.contenedorsHilghlightsBlog{
+    display: flex;
+}
+/*div que contienen las experiencias de clientes fin*/
+
+/*blog 1*/
+.blog1{
+    width: 500px;
+    margin-left: 5px;
+    text-align: center;  
+}
+
+.blog1 img{
+    height: 300px;
+    width: 450px;
+}
+
+.blog1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.blog1 a:hover{
+    color: #45a049;
+}
+/*blog 1*/
+
+/*blog 2*/
+.blog2{
+    width: 500px;
+    margin-left: 25px;
+    text-align: center;  
+}
+
+.blog2 img{
+    height: 300px;
+    width: 450px;
+}
+
+.blog2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.blog2 a:hover{
+    color: #45a049;
+}
+/*blog 2*/
+
+/*Sexta parte del Contenido "highlights" fin------------------------------------*/
+
+/* pie */
+#pie {
+    width: 100%;
+    background-color: rgb(0, 156, 159);
+}
+
+.contenedorPie{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorPie ul{
+    list-style: none; 
+}
+/* pie */
